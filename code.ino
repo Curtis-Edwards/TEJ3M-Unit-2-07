@@ -35,12 +35,12 @@ void loop() {
   Serial.print("Distance: ");
   Serial.println(distance);
   delay(100);
-  if (distance < 50) { // Checks if the distance is less than 50cm
+  if (distance < 20) { // Checks if the distance is less than 50cm
     Serial.print(distance);
     Serial.println(" cm");
     servo.write(90);
   }
-  else if (distance > 50) { // Checks if the distance is greater than 50cm
+  else if (distance > 20) { // Checks if the distance is greater than 50cm
     Serial.print(distance);
     Serial.println(" cm");
   }
